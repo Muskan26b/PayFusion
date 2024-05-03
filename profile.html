@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title> Profile </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center  bg-dark">
+    <!-- Navbar content -->
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block"> PayFusion</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- End Search Bar -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-primary badge-number">4</span>
+          </a><!-- End Notification Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              You have 4 new notifications
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-exclamation-circle text-warning"></i>
+              <div>
+                <h4>Lorem Ipsum</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>30 min. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-x-circle text-danger"></i>
+              <div>
+                <h4>Atque rerum nesciunt</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>1 hr. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-check-circle text-success"></i>
+              <div>
+                <h4>Sit rerum fuga</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>2 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-info-circle text-primary"></i>
+              <div>
+                <h4>Dicta reprehenderit</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>4 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">Show all notifications</a>
+            </li>
+
+          </ul><!-- End Notification Dropdown Items -->
+
+        </li><!-- End Notification Nav -->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-chat-left-text"></i>
+            <span class="badge bg-success badge-number">3</span>
+          </a><!-- End Messages Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+            <li class="dropdown-header">
+              You have 3 new messages
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Maria Hudson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Anna Nelson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>6 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>David Muldon</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>8 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="dropdown-footer">
+              <a href="#">Show all messages</a>
+            </li>
+
+          </ul><!-- End Messages Dropdown Items -->
+
+        </li><!-- End Messages Nav -->
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img id="nav-profile-img" src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2 " id="nav-profile-name"></span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6><span id="nav-pro-name"></span></h6>
+              <span id="nav-designation"></span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" id="account-settings"
+                href="profile.html?activeTab=edit">
+                <i class="bi bi-gear"></i>
+                <span>Profile Settings</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" id="signOutLink" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="employee.html">
+          <i class="bi bi-card-list"></i>
+          <span>Employee Master</span>
+        </a>
+      </li><!-- End Employee Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="CTC.html">
+          <i class="bi bi-card-list"></i>
+          <span>CTC Master</span>
+        </a>
+      </li><!-- End CTC Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed " href="attendance.html">
+          <i class="bi bi-card-list"></i>
+          <span>Attendance Master</span>
+        </a>
+      </li><!-- End Attendance Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="payroll.html">
+          <i class="bi bi-card-list"></i>
+          <span>Payroll Master</span>
+        </a>
+      </li><!-- End Payroll Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed " href="year.html">
+          <i class="bi bi-card-list"></i>
+          <span>Year Master</span>
+        </a>
+      </li><!-- End Year Nav -->
+
+      <li class="nav-heading">Pages</li>
+      <li class="nav-item">
+        <a class="nav-link active" href="profile.html">
+          <i class="bi bi-person"></i>
+          <span>Profile</span>
+        </a>
+      </li><!-- End Profile Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="register.html">
+          <i class="bi bi-card-list"></i>
+          <span>Register</span>
+        </a>
+      </li><!-- End Register Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="login.html">
+          <i class="bi bi-box-arrow-in-right"></i>
+          <span>Login</span>
+        </a>
+      </li><!-- End Login Page Nav -->
+    </ul>
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Profile</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Profile</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section profile">
+      <div class="row">
+        <div class="col-xl-4">
+
+          <div class="card">
+            <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
+
+              <img id="profile-img1" src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+              <h2>
+                <p class="strong"><span id="p-name"></span></p>
+              </h2>
+              <h3>
+                <p class="strong"><span id="p-designation"></span></p>
+              </h3>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-xl-8">
+
+          <div class="card">
+            <div class="card-body pt-3">
+              <!-- Bordered Tabs -->
+              <ul class="nav nav-tabs nav-tabs-bordered">
+
+                <li class="nav-item">
+                  <button class="nav-link active" id="profile-overview-tab" data-bs-toggle="tab"
+                    data-bs-target="#profile-overview">
+                    Overview
+                  </button>
+                </li>
+
+                <li class="nav-item">
+                  <button class="nav-link" id="profile-edit-tab" data-bs-toggle="tab" data-bs-target="#profile-edit">
+                    Edit profile
+                  </button>
+                </li>
+
+                <!-- <li class="nav-item">
+                  <button class="nav-link" id="profile-change-password-tab" data-bs-toggle="tab"
+                    data-bs-target="#profile-change-password">
+                    Change password
+                  </button>
+
+                </li>-->
+
+              </ul>
+              <div class="tab-content pt-2">
+
+                <!-----------------------------------------------------------Profile Overview Details Display----------------------------------------------------------------------->
+
+                <div class="tab-pane fade show active profile-overview" id="profile-overview">
+                  <h5 class="card-title">Profile Details</h5>
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 label">Name : <span class="col-lg-9 col-md-8"
+                        id="profile-name"></span>
+
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 label">Email : <span class="col-lg-3 col-md-8" id="email"></span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 label">Department : <span class="col-lg-3 col-md-8"
+                        id="department"></span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 label">Designation : <span class="col-lg-3 col-md-8"
+                        id="designation"></span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 label">Address : <span class="col-lg-3 col-md-8"
+                        id="address"></span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 label">Country : <span class="col-lg-3 col-md-8"
+                        id="country"></span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 label">Phone : <span class="col-lg-3 col-md-8" id="phone"></span>
+                    </div>
+                  </div>
+                </div>
+                <!------------------------------------------------------------------End Overview------------------------------------------------------------------------------->
+
+
+                <!------------------------------------------------------------- Profile Edit Form -------------------------------------------------------------------------------->
+
+                <div class="tab-pane fade profile-edit pt-3" id="profile-edit">
+                  <form id="edit-profile-form">
+                    <div class="row mb-3">
+                      <label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Profile
+                        Image</label>
+                      <div class="col-md-8 col-lg-9">
+                        <img id="profile-img2" src="assets/img/profile-img.jpg" alt="Profile">
+                        <div class="pt-2">
+                          <input type="file" id="profileImage" accept="image/*" style="display: none;">
+                          <label for="profileImage" class="btn btn-primary btn-sm" title="Upload new profile image"><i
+                              class="bi bi-upload"></i></label>
+                          <a href="#" class="btn btn-danger btn-sm" title="Remove my profile image"><i
+                              class="bi bi-trash"></i></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="edit-name" class="col-md-4 col-lg-3 col-form-label">Name</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="name" type="text" class="form-control" id="edit-name">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="Email" class="col-md-4 col-lg-3 col-form-label">Email</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="email" type="email" class="form-control" id="Email">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="edit-department" class="col-md-4 col-lg-3 col-form-label">Department</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="department" type="text" class="form-control" id="edit-department">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="edit-designation" class="col-md-4 col-lg-3 col-form-label">Designation</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="designation" type="text" class="form-control" id="edit-designation">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="edit-address" class="col-md-4 col-lg-3 col-form-label">Address</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="address" type="text" class="form-control" id="edit-address">
+                      </div>
+                    </div>
+
+
+                    <div class="row mb-3">
+                      <label for="edit-country" class="col-md-4 col-lg-3 col-form-label">Country</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="country" type="text" class="form-control" id="edit-country">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="edit-phone" class="col-md-4 col-lg-3 col-form-label">Phone</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="phone" type="text" class="form-control" id="edit-phone">
+                      </div>
+                    </div>
+
+                    <div class="text-center">
+                      <button type="submit" id="saveChangesButton" class="btn btn-primary saveChangesButton">Save
+                        Changes</button>
+                    </div>
+                  </form>
+                </div>
+                <!----------------------------------------------------------- End Profile Edit Form ------------------------------------------------------------------------->
+
+
+                <!-------------------------------------------------------------Change Password Form ------------------------------------------------------------------------------------------------>
+
+                <!-- <div class="tab-pane fade pt-3" id="profile-change-password">
+                  <form onsubmit="changePassword(event);">
+
+                    <div class="row mb-3">
+                      <label for="currentPassword" class="col-md-4 col-lg-3 col-form-label">Current Password</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="password" type="password" class="form-control" id="currentPassword">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="newPassword" class="col-md-4 col-lg-3 col-form-label">New
+                        Password</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="newpassword" type="password" class="form-control" id="newPassword">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="renewPassword" class="col-md-4 col-lg-3 col-form-label">Re-enter
+                        New Password</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="renewpassword" type="password" class="form-control" id="renewPassword">
+                      </div>
+                    </div>
+
+                    <div class="text-center">
+                      <button type="submit" id="changePasswordButton" class="btn btn-primary">Change Password</button>
+                    </div>
+
+                  </form>
+                  <div id="passwordUpdateMessage" style="display: none;" class="alert alert-success" role="alert">
+                    Password updated successfully!
+                  </div>
+                  <div id="passwordMismatchMessage" class="alert alert-danger" style="display: none;" role="alert">
+                    New password and re-entered password do not match.
+                  </div>
+                  <!------------------------------------------------------------ End Change Password Form ---------------------------------------------------------------------->
+              </div>
+            </div>
+
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>PayFusion</span></strong>. All Rights Reserved
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+
+
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>-->
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+
+
+
+  <script type="module">
+
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+    import { getDatabase, ref, onValue, update } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-database.js";
+    import { getAuth, onAuthStateChanged, EmailAuthProvider } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
+
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBFZCp7QTt-aP7DbuNVepmy8hZWAFeLQ5M",
+      authDomain: "payfusion-project.firebaseapp.com",
+      databaseURL: "https://payfusion-project-default-rtdb.firebaseio.com",
+      projectId: "payfusion-project",
+      storageBucket: "payfusion-project.appspot.com",
+      messagingSenderId: "1000636166254",
+      appId: "1:1000636166254:web:f7b1ae682735533978367f"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const database = getDatabase(app);
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+      //-------------------------------------------Sign Out------------------------------------------------------------------------      
+
+      // Function to handle sign-out
+      function signOut() {
+        auth.signOut().then(function () {
+          // Sign-out successful.
+          window.location.replace("login.html"); // Redirect to login page
+        }).catch(function (error) {
+          // An error happened.
+          console.log(error.message);
+        });
+      }
+
+
+      // Add event listener to the "Sign Out" link
+      document.getElementById('signOutLink').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent the default link behavior
+        signOut(); // Call the sign-out function
+      });
+
+      //----------------------------------------------------profile details get fetch from firebase and display in page----------------------------------------------------------------------------------------
+      // Function to display user profile details
+      function displayProfile(userData) {
+        document.getElementById('nav-profile-name').textContent = userData.name;
+        document.getElementById('nav-pro-name').textContent = userData.name;
+        document.getElementById('nav-designation').textContent = userData.designation;
+        document.getElementById('p-name').textContent = userData.name;
+        document.getElementById('p-designation').textContent = userData.designation;
+        document.getElementById('profile-name').textContent = userData.name;
+        document.getElementById('email').textContent = userData.email;
+        document.getElementById('department').textContent = userData.department;
+        document.getElementById('designation').textContent = userData.designation;
+        document.getElementById('address').textContent = userData.address;
+        document.getElementById('country').textContent = userData.country;
+        document.getElementById('phone').textContent = userData.phone;
+
+        // Populate form fields with user data
+        document.getElementById('edit-name').value = userData.name;
+        document.getElementById('Email').value = userData.email;
+        document.getElementById('edit-department').value = userData.department;
+        document.getElementById('edit-designation').value = userData.designation;
+        document.getElementById('edit-address').value = userData.address;
+        document.getElementById('edit-country').value = userData.country;
+        document.getElementById('edit-phone').value = userData.phone;
+      }
+
+      // Listen for changes in authentication state
+      onAuthStateChanged(auth, (user) => {
+        if (user) {
+          const userEmail = user.email;
+          const userRef = ref(database, `payfusion/Register record/${userEmail.replace(/[.#$[\]]/g, "_")}`);
+          // Fetch user profile details from Firebase Realtime Database
+
+          // Reset profile fields to default state
+          resetProfileFields();
+
+          onValue(userRef, (snapshot) => {
+            const userData = snapshot.val();
+            if (userData) {
+              displayProfile(userData);
+            } else {
+              console.log("User data not found in register record");
+            }
+          });
+        } else {
+          console.log("User not logged in");
+          // You can redirect the user to the login page here if needed
+        }
+      });
+
+      // Function to reset profile fields to default state
+      function resetProfileFields() {
+        document.getElementById('nav-profile-name').textContent = "";
+        document.getElementById('nav-pro-name').textContent = "";
+        document.getElementById('nav-designation').textContent = "";
+        document.getElementById('p-name').textContent = "";
+        document.getElementById('p-designation').textContent = "";
+        document.getElementById('profile-name').textContent = "";
+        document.getElementById('email').textContent = "";
+        document.getElementById('department').textContent = "";
+        document.getElementById('designation').textContent = "";
+        document.getElementById('address').textContent = "";
+        document.getElementById('country').textContent = "";
+        document.getElementById('phone').textContent = "";
+
+        // Reset form fields
+        document.getElementById('edit-name').value = "";
+        document.getElementById('Email').value = "";
+        document.getElementById('edit-department').value = "";
+        document.getElementById('edit-designation').value = "";
+        document.getElementById('edit-address').value = "";
+        document.getElementById('edit-country').value = "";
+        document.getElementById('edit-phone').value = "";
+      }
+
+      //-----------------------------------------------------------------edit profile------------------------------------------------------------------
+
+      document.getElementById('profile-change-password-tab').addEventListener('click', (e) => {
+        e.preventDefault();
+        const changePasswordTab = document.getElementById('profile-change-password-tab');
+        const overviewTab = document.getElementById('profile-overview-tab');
+        const changePasswordForm = document.getElementById('profile-change-password');
+        const overview = document.getElementById('profile-overview');
+        if (changePasswordTab && overviewTab && changePasswordForm && overview) {
+          changePasswordTab.classList.add('active');
+          overviewTab.classList.remove('active');
+          changePasswordForm.classList.add('show');
+          overview.classList.remove('show');
+        } else {
+          console.error("Element not found");
+        }
+      });
+
+
+      // Inside the submit event listener for the "Save Changes" button
+      document.getElementById('saveChangesButton').addEventListener('click', (e) => {
+        e.preventDefault();
+        // Collect updated data from form fields
+        const updatedUserData = {
+          name: document.getElementById('edit-name').value,
+          email: document.getElementById('Email').value,
+          department: document.getElementById('edit-department').value,
+          designation: document.getElementById('edit-designation').value,
+          address: document.getElementById('edit-address').value,
+          country: document.getElementById('edit-country').value,
+          phone: document.getElementById('edit-phone').value
+        };
+
+        // Update user data in the database
+        const userEmail = auth.currentUser.email;
+        const userRef = ref(database, `payfusion/Register record/${userEmail.replace(/[.#$[\]]/g, "_")}`);
+        update(userRef, updatedUserData)
+          .then(() => {
+            console.log("User data updated successfully");
+            // Redirect to the overview tab
+            document.getElementById('profile-overview-tab').click();
+          })
+          .catch((error) => {
+            console.error("Error updating user data: ", error);
+            // Handle errors appropriately
+          });
+      });
+      //---------------------------------Profile image change------------------------------------------------------------------------------------------
+
+      // Check if there is a previously uploaded image in local storage
+      window.addEventListener('load', function () {
+        const savedImage = localStorage.getItem('profileImage');
+        if (savedImage) {
+          document.getElementById('nav-profile-img').src = savedImage;
+          document.getElementById('profile-img1').src = savedImage;
+          document.getElementById('profile-img2').src = savedImage;
+        }
+      });
+
+      // Handle file input change event
+      document.getElementById('profileImage').addEventListener('change', function (event) {
+        const file = event.target.files[0];
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            // Update image sources
+            const imageData = e.target.result;
+            document.getElementById('nav-profile-img').src = imageData;
+            document.getElementById('profile-img1').src = imageData;
+            document.getElementById('profile-img2').src = imageData;
+
+            // Save the image data to local storage
+            localStorage.setItem('profileImage', imageData);
+          };
+          reader.readAsDataURL(file);
+        }
+      });
+
+      // Function to remove profile image
+      function removeProfileImage() {
+        // Update image sources to the default image
+        document.getElementById('nav-profile-img').src = '';
+        document.getElementById('profile-img1').src = '';
+        document.getElementById('profile-img2').src = '';
+
+        // Remove the image data from local storage
+        localStorage.removeItem('profileImage');
+      }
+
+      // Handle click event for "Remove my profile image"
+      document.querySelector('.btn-danger').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent the default behavior of the anchor element
+        removeProfileImage();
+      });
+
+      //---------------------------------Profile settings ------------------------------------------------------------------------------------------
+
+      var params = new URLSearchParams(window.location.search);
+      var activeTab = params.get('activeTab');
+
+      var editProfileTab = document.querySelector(".nav-link[data-bs-target='#profile-edit']");
+      var overviewTab = document.querySelector(".nav-link[data-bs-target='#profile-overview']");
+      var overviewTabContent = document.querySelector(".tab-pane#profile-overview");
+      var editProfileTabContent = document.querySelector(".tab-pane#profile-edit");
+
+      if (editProfileTab && overviewTab && overviewTabContent && editProfileTabContent) {
+        if (activeTab === 'edit') {
+          // Activate the "Edit Profile" tab and deactivate the "Overview" tab
+          editProfileTab.classList.add("active");
+          overviewTab.classList.remove("active");
+
+          // Show the "Edit Profile" tab content and hide the "Overview" tab content
+          overviewTabContent.classList.remove("show", "active");
+          editProfileTabContent.classList.add("show", "active");
+        } else {
+          // Activate the "Overview" tab and deactivate the "Edit Profile" tab
+          overviewTab.classList.add("active");
+          editProfileTab.classList.remove("active");
+
+          // Show the "Overview" tab content and hide the "Edit Profile" tab content
+          editProfileTabContent.classList.remove("show", "active");
+          overviewTabContent.classList.add("show", "active");
+        }
+      }
+
+      //---------------------------------------------------------------Change password-----------------------------------------------------------------------------     
+
+
+      // Function to change password
+      function changePassword() {
+        event.preventDefault(); // Prevent form submission
+
+        const currentPassword = document.getElementById('currentPassword').value;
+        const storedPassword = document.getElementById('storedPassword').value;
+        const newPassword = document.getElementById('newPassword').value;
+        const renewPassword = document.getElementById('renewPassword').value;
+
+
+        console.log("Entered Current Password:", currentPassword);
+        console.log("Stored Password:", storedPassword);
+
+        // Check if the entered current password matches the stored password
+        if (currentPassword === storedPassword) {
+          console.log("Current password is correct.");
+
+          // Proceed with changing the password
+          const user = auth.currentUser;
+          if (newPassword === renewPassword) {
+            user.updatePassword(newPassword)
+              .then(() => {
+                // Password has been updated successfully
+                document.getElementById('passwordUpdateMessage').style.display = 'block';
+                document.getElementById('passwordMismatchMessage').style.display = 'none';
+              })
+              .catch((error) => {
+                // Handle errors while updating password
+                console.error('Error updating password:', error.message);
+              });
+          } else {
+            // Display error message if new password and re-entered password do not match
+            document.getElementById('passwordUpdateMessage').style.display = 'none';
+            document.getElementById('passwordMismatchMessage').style.display = 'block';
+          }
+        } else {
+          // Display error message for incorrect current password
+          alert('Incorrect current password. Please try again.');
+          console.log("Entered current password does not match the stored password.");
+
+        }
+      }
+
+
+    });
+  </script>
+
+
+
+
+</body>
+
+</html>
